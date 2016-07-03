@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>1. Create an object type person which consists of first name, last name, e-mail and phone
+number properties.
+2. Using JavaScript append these properties to appropriate place in an html document</p>
+
+<p id="a1"></p>
+
+<script>
+var person = {
+    firstName:"Sri",
+    lastName:"Ram",
+    email:"xyz@gmail.com",
+    phoneno:12345,
+fullName : function() {
+       return this.firstName + " " + this.lastName;
+    }
+  };
+var detail = {
+    age: 100
+  };
+
+document.getElementById("a1").innerHTML = person.fullName()+" "+"is"+ detail.age+"years old";
+
+</script>
+
+</body>
+</html>
